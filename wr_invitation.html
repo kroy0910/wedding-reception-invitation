@@ -318,7 +318,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 			</div>
    <div class="col-md-6 contact-us">
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf9m-d80o0otFUlOv1daeNZllwc1AYo3_rcnSpWL_Za3kuoSg/formResponse" method="post" <a href="https://theta360.com/s/bcHcyUd3sEyUKef4h6JSyFUOq" target="_self"></a>>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf9m-d80o0otFUlOv1daeNZllwc1AYo3_rcnSpWL_Za3kuoSg/formResponse" method="post" target="dummyIframe">
 
 							<div class="styled-input">
 								<input type="text" id="atend1" name="entry.1130060773" placeholder="御 出 席 / 御 欠 席（ 必 須 ）" required="">
@@ -353,8 +353,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input type="submit" value="送    信">
 							</div>
 							</div>
-
 						</form>
+
+						<iframe name="dummyIframe" style="display:none;"></iframe>
+					 </div>
+					 <div id="thxMessage" style="display:none;">お問い合わせありがとうございました。</div>
+					 <script>
+					 function sendGform(){
+					    document.myForm.submit();
+					    document.getElementById('formWrapper').style.display = 'none';
+					    document.getElementById('thxMessage').style.display = 'block';
+					 }
+						</script>
 					  </div>
 
 					<div class="clearfix"> </div>
